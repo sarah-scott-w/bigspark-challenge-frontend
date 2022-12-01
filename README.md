@@ -22,14 +22,15 @@ and be prepared to discuss what you would have liked to implement if you'd had m
 2. Create a single-page web application with some data visualisations using the data provided. This can be written in any language or using any framework which you are comfortable with. For Javascript, you may find it helpful to use the [D3|https://d3js.org] library for this.
 
 ### (Optional: Attempt 1 or More) Stretch Goals
-1. [**DevOps**] Dockerize your approach such that all required services and data can be brought up with a single docker command
-2. [**Cloud Engineering**] Implement the basic task on a cloud platform of your choice & be prepared to discuss your deployment choices with your interviewer.
-3. [**Data Engineering Core**] Integrate the basic task into a larger data processing pipeline which makes the transformed data available to your app in a database of your choice, ready for visualisation.
-4. [**Data Engineering Core**] Frame the basic task as a transaction-level streaming problem using an event streaming tool of your choice (an example script `helper-scripts/create-kafka-events.sh`is provided to load events onto Apache Kafka). Details for this dataset are given [below](#streaming-dataset-tpcds_data_5g_streaming).
-5. [**Data Engineering Core**] Frame the basic task as a periodic batch problem, with new batches of fact and dimension data arriving monthly. End users of reports should be able to view at least 1 data view or visualization in Zeppelin as of an arbitrary past date. Details for this dataset are given [below](#quarterly-batch-dataset).
-6. [**Software Engineering**] Put together a basic design for how you might implement the end-to-end process from data sourcing to productionized reporting for hundreds of users in a large enterprise environment. Please include a diagram describing your approach and be prepared to discuss your design choices at a high level.
-7. [**Data Science**] Perform more advanced data visualizations or interactive data analytics to extract insights from the data. Be prepared to demonstrate a critical analysis of the data, and discuss any shortcomings of your approach. 
-8. [**Machine Learning**] Extract some insights from the data using supervised or unsupervised learning. You may find larger dataset `tpcds_data_10g` easier for this due to dataset size.
+1. [**Frontend Development**] Create some more advanced visualisations, including interactive fields for filtering, changing graph settings etc
+2. [**DevOps**] Dockerize your approach such that all required services and data can be brought up with a single docker command
+3. [**Cloud Engineering**] Implement the basic task on a cloud platform of your choice & be prepared to discuss your deployment choices with your interviewer.
+4. [**Data Engineering Core**] Integrate the basic task into a larger data processing pipeline which makes the transformed data available to your app in  database of your choice, ready for visualisation.
+5. [**Data Engineering Core**] Frame the basic task as a transaction-level streaming problem using an event streaming tool of your choice (an example script `helper-scripts/create-kafka-events.sh`is provided to load events onto Apache Kafka). Details for this dataset are given [below](#streaming-dataset-tpcds_data_5g_streaming).
+6. [**Data Engineering Core**] Frame the basic task as a periodic batch problem, with new batches of fact and dimension data arriving monthly. End users of reports should be able to view at least 1 data view or visualization in Zeppelin as of an arbitrary past date. Details for this dataset are given [below](#quarterly-batch-dataset).
+7. [**Software Engineering**] Put together a basic design for how you might implement the end-to-end process from data sourcing to productionized reporting for hundreds of users in a large enterprise environment. Please include a diagram describing your approach and be prepared to discuss your design choices at a high level.
+8. [**Data Science**] Perform more advanced data visualizations or interactive data analytics to extract insights from the data. Be prepared to demonstrate a critical analysis of the data, and discuss any shortcomings of your approach. 
+9. [**Machine Learning**] Extract some insights from the data using supervised or unsupervised learning. You may find larger dataset `tpcds_data_10g` easier for this due to dataset size.
 
 # Dataset Description
 
