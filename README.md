@@ -1,16 +1,12 @@
-# bigspark Data Engineering Challenge: Spark
+# bigspark Data Engineering Challenge: Frontend
 
 ## Summary
 
-Here at bigspark, we are into Apache Spark in a BIG way. 
-This is a core area of expertise for us, but we also need the ability to understand new technologies and components, and get them up and running in challenging enterprise environments. \
-For this challenge we want you to get two of the (many) core components we work with installed, up and running, and use those components to generate some interesting insights into some data. \
 For this challenge there are 2 sections: 
-- The basic task section should be completed by all applicants: this is to install some core tooling to ensure that everyone is comfortable with desktop set-up of some of our core components.
+- The basic task section should be completed by all applicants: this is to create a single-page web application with some basic data visualisations.
 - The stretch goals can be optionally completed to demonstrate capability in specific areas, or using specific tooling you may already be experienced with. The key here is to demonstrate what you can do, and in which areas of the data landscape you are particularly interested. As such, if you have an idea for how to extend the basic task in a way which is not listed below, please go ahead: it would be great to walk through and discuss your ideas. 
 
 Task submission will be in the form of a 10-15 minute demo over video call, followed by around 10 minutes of discussion around your approach and any challenges you faced in completing this challenge.
-
 
 We appreciate that your time is valuable, and due to the open-ended nature of the listed tasks we know that it may not be 
 possible to implement all of your ideas. If this is the case then please still submit whatever you have, 
@@ -20,21 +16,15 @@ and be prepared to discuss what you would have liked to implement if you'd had m
 ## Task Description
 
 ### Basic Task
-1. Download and install Apache Spark. 
-    - You can install this application locally on your workstation, via Docker, or in a container or VM via a cloud services provider of your choice.
-2. Download and install Apache Zeppelin	
-    - You can install this application locally on your workstation, via Docker, or in a container or VM via a cloud services provider of your choice.
-    - Whether or not you are using Docker images, your Zeppelin Spark interpreter must reference the standalone Spark installation you performed in the previous step, *not* the bundled Spark interpreter provided with Zeppelin.
-    - Note: to achieve this, you will need to set the SPARK_HOME environment variable prior to starting any services or docker containers, if you are using docker then your SPARK_HOME will need to be mapped on launching your container.
-3. Access the TPC-DS data available on our AWS S3 bucket. Details for this dataset are provided [here](#base-dataset-tpcds_data_5g), and access instructions are provided [here](#data-access).
+1. Access the TPC-DS data available on our AWS S3 bucket. Details for this dataset are provided [here](#base-dataset-tpcds_data_5g), and access instructions are provided [here](#data-access).
    - You may either download this data locally and access it from your local disk, or connect your spark session directly to S3.
    - Data documentation is here: http://tpc.org/tpc_documents_current_versions/pdf/tpc-ds_v3.2.0.pdf
-4. Create some basic data visualizations from at least 1 of the input data files.
+2. Create a single-page web application with some data visualisations using the data provided. This can be written in any language or using any framework which you are comfortable with. For Javascript, you may find it helpful to use the [D3|https://d3js.org] library for this.
 
 ### (Optional: Attempt 1 or More) Stretch Goals
 1. [**DevOps**] Dockerize your approach such that all required services and data can be brought up with a single docker command
 2. [**Cloud Engineering**] Implement the basic task on a cloud platform of your choice & be prepared to discuss your deployment choices with your interviewer.
-3. [**Data Engineering Core**] Integrate the basic task into a larger data processing pipeline using an orchestration tool of your choice, integrating with at least 1 additional tool or database of your choice.
+3. [**Data Engineering Core**] Integrate the basic task into a larger data processing pipeline which makes the transformed data available to your app in a database of your choice, ready for visualisation.
 4. [**Data Engineering Core**] Frame the basic task as a transaction-level streaming problem using an event streaming tool of your choice (an example script `helper-scripts/create-kafka-events.sh`is provided to load events onto Apache Kafka). Details for this dataset are given [below](#streaming-dataset-tpcds_data_5g_streaming).
 5. [**Data Engineering Core**] Frame the basic task as a periodic batch problem, with new batches of fact and dimension data arriving monthly. End users of reports should be able to view at least 1 data view or visualization in Zeppelin as of an arbitrary past date. Details for this dataset are given [below](#quarterly-batch-dataset).
 6. [**Software Engineering**] Put together a basic design for how you might implement the end-to-end process from data sourcing to productionized reporting for hundreds of users in a large enterprise environment. Please include a diagram describing your approach and be prepared to discuss your design choices at a high level.
