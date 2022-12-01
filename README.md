@@ -1,4 +1,4 @@
-# bigspark Data Engineering Challenge: Frontend
+# bigspark Software Engineering Challenge: Frontend
 
 ## Summary
 
